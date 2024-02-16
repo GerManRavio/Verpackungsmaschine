@@ -43,11 +43,11 @@ namespace Verpackungsmaschine
             // === Temperatursensor ===
             Console.Write(avgFilter.getType() + ": ");
             avgFilter.fetchSample(ref messungen);
-            Console.WriteLine("AVG: " + messungen[0].ToString());
+            Console.WriteLine("AVG: " + messungen[0].ToString() + "°C");
             // === Drucksensor ===
             Console.Write(maxFilter.getType() + ": ");
             maxFilter.fetchSample(ref messungen);
-            Console.WriteLine("MAX: " + messungen[0].ToString());
+            Console.WriteLine("MAX: " + messungen[0].ToString() + " Pa");
         }
     }
 }
