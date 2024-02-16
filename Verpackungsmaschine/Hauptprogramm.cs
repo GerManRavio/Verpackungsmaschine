@@ -19,7 +19,7 @@ namespace Verpackungsmaschine
 
             for (int i = 0; i < dr.sampleSize(); i++)
             {
-                Console.Write(messungen[i].ToString() + " ");
+                Console.Write(messungen[i].ToString() + " Pa; ");
             }
             Console.WriteLine("\n");
 
@@ -30,7 +30,7 @@ namespace Verpackungsmaschine
 
             for (int i = 0; i < te.sampleSize(); i++)
             {
-                Console.Write(messungen[i].ToString() + " ");
+                Console.Write(messungen[i].ToString() + "°C ");
             }
             Console.WriteLine("\n");
 
@@ -48,8 +48,6 @@ namespace Verpackungsmaschine
             Console.Write(maxFilter.getType() + ": ");
             maxFilter.fetchSample(ref messungen);
             Console.WriteLine("MAX: " + messungen[0].ToString());
-
-            Console.ReadKey();
         }
     }
 }
