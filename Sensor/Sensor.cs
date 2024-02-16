@@ -19,7 +19,7 @@ namespace Sensor
             Random random = new Random();
             for (int i = 0; i < messungen.Length; i++)
             {
-                messungen[i] = random.NextDouble() * 100;
+                messungen[i] = Math.Round(random.NextDouble() * 50, 2);
             }
         }
 
@@ -41,7 +41,7 @@ namespace Sensor
             Random random = new Random();
             for (int i = 0; i < messungen.Length; i++)
             {
-                messungen[i] = random.NextDouble() * 100;
+                messungen[i] = Math.Round(random.NextDouble() * 100, 2);
             }
         }
 
